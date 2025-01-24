@@ -1,0 +1,33 @@
+1. Application start
+2. Ioc container started
+3. Construct bean
+4. Inject dependency into constructed bean
+5. Post construct
+6. use bean
+7. Pre destroy
+8. Bean destroyed
+
+1. Application Start
+The Spring application starts, and the context (e.g., ApplicationContext) is initialized.
+Configuration files or annotations are loaded to bootstrap the application.
+2. IoC Container Started
+The Inversion of Control (IoC) container initializes and manages the lifecycle of beans.
+The container scans for beans, resolves dependencies, and prepares them for use.
+3. Construct Bean
+The container instantiates beans based on configurations or annotations.
+The constructors of bean classes are invoked during this step.
+4. Inject Dependencies into Constructed Bean
+Dependencies are injected via constructor, setter, or field injection.
+Bean properties are populated as per the defined configuration.
+5. Post Construct
+The container calls @PostConstruct methods, InitializingBean.afterPropertiesSet(), or custom init-method.
+Initialization logic such as resource setup is executed here.
+6. Use Bean
+The fully initialized bean is now ready for use in the application.
+Business logic or functionality is executed using the bean.
+7. Pre Destroy
+Before the application shuts down, @PreDestroy, DisposableBean.destroy(), or custom destroy-method is called.
+Cleanup tasks like closing connections or releasing resources are performed.
+8. Bean Destroyed
+The IoC container removes the bean from memory.
+The lifecycle of the bean ends, freeing up resources.
