@@ -1,0 +1,23 @@
+Feature                | Spring                              | Spring Boot                          
+---------------------- | -------------------------------- | ------------------------------------
+Framework Type        | Core framework for Java apps     | Extension of Spring for rapid dev   
+Configuration         | Manual XML/Java-based setup      | Auto-configuration using Starters   
+Boilerplate Code      | Requires more setup              | Reduces boilerplate code            
+Dependency Management | Manual dependency handling       | Uses Spring Boot Starters           
+Embedded Server      | Requires external server setup   | Comes with Tomcat, Jetty, etc.      
+Microservices Support| Needs additional setup           | Designed for microservices         
+Production Ready     | Needs external monitoring tools  | Includes Actuator for monitoring    
+
+| Feature                     | Spring                                        | Spring Boot                                     |
+|-----------------------------|----------------------------------------------|------------------------------------------------|
+| Configuration                | Requires manual configuration (XML or Java)  | Auto-configures most settings based on dependencies |
+| Project Setup                | Can be complex, requires setup of multiple files (e.g., applicationContext.xml) | Provides a simple way to set up applications with default configurations |
+| Dependencies                 | Requires manual management of dependencies   | Uses "Spring Boot Starter" dependencies to simplify dependency management |
+| Standalone                   | Often requires an external server (e.g., Tomcat) | Comes with an embedded server (Tomcat, Jetty, or Undertow) |
+| Development Speed            | Slower due to manual setup and configuration | Faster development with pre-configured templates and defaults |
+| Configuration Files          | Relies on XML or Java-based configuration files | Primarily uses application.properties or application.yml |
+| Embedded Server              | No built-in embedded server                  | Provides embedded Tomcat, Jetty, or Undertow for running the application |
+| Complexity                   | More complex and requires more boilerplate   | Simplifies code and reduces complexity through auto-configuration and conventions |
+Production Ready     | Needs external monitoring tools  | Includes Actuator for monitoring    
+
+
